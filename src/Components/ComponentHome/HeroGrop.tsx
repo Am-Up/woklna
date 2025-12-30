@@ -13,7 +13,7 @@ export default function HeroGrop() {
         transition={{ duration: 1.7 }}
         className="sm:w-[700px] mx-auto"
       >
-        <scetion className="w-full flex flex-col sm:flex-row gap-5  mx-auto ">
+        <section className="w-full flex flex-col sm:flex-row gap-5  mx-auto ">
           <section className="sm:w-[360px] sm:h-[90px] py-2 px-3 bg-white drop-shadow-2xl rounded-full flex mx-auto">
             <div className="flex items-center justify-center w-4/6 mx-auto">
               <AvatarGroup
@@ -55,7 +55,7 @@ export default function HeroGrop() {
               <br /> Listings Everyday!
             </p>
           </section>
-        </scetion>
+        </section>
       </motion.section>
       <motion.section
         initial={{ opacity: 0, x: 120 }}

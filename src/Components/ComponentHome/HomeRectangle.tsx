@@ -3,8 +3,8 @@ import { Properties } from "../../assets/index";
 import StyleAccent from "../Ui/StyleAccent";
 import { motion } from "framer-motion";
 export default function HomeRectangle() {
-  const [img1, img2, img3, img4, img5] = Properties;
-  const model = null;
+  const [img1, img3, img4, img5] = Properties;
+ 
   return (
     <div className="py-2 pb-32 sm:px-[10%] flex flex-col  gap-4 relative">
       <section className="px-4">

@@ -1,4 +1,3 @@
-
 import { Ellipses } from "../../assets/index";
 import Rating from "@mui/material/Rating";
 import StelyAccent from "../Ui/StyleAccent";
@@ -60,11 +59,10 @@ export default function AgentTestimonials() {
               <img className="size-12" src={img} alt="img" />
               <h4 className="text-sm lg:text-h4 font-poppins">Amir mohammd</h4>
               <Rating
-                fontSize="small"
-                className="lg:pl-10 "
-                name="half-rating"
-                defaultValue={2.5}
+                value={4.5}
                 precision={0.5}
+                readOnly
+                sx={{ fontSize: 18 }}
               />
             </div>
           </div>

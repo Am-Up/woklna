@@ -1,8 +1,16 @@
-import { useEffect } from "react";
+import { Dispatch, SetStateAction, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import RealEstateAgentSharpIcon from "@mui/icons-material/RealEstateAgentSharp";
 
-export default function Lodaing_Logo({ loading, setLoading }) {
+type LoadingLogoProps = {
+  loading: boolean;
+  setLoading: Dispatch<SetStateAction<boolean>>;
+};
+
+export default function Lodaing_Logo({
+  loading,
+  setLoading,
+}: LoadingLogoProps) {
   // Timer
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -15,7 +23,9 @@ export default function Lodaing_Logo({ loading, setLoading }) {
   // Lock scroll
   useEffect(() => {
     document.body.style.overflow = loading ? "hidden" : "auto";
-    return () => (document.body.style.overflow = "auto");
+    return () => {
+      document.body.style.overflow = "auto";
+    };
   }, [loading]);
 
   return (

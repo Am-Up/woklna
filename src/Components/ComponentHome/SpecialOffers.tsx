@@ -1,8 +1,9 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { ImgOofers, icons } from "../../assets/index";
 import HomeFilledIcon from "@mui/icons-material/HomeFilled";
 import AttachMoneyIcon from "@mui/icons-material/AttachMoney";
 import { motion } from "framer-motion";
+
 interface PropertyOffer {
   id: number;
   imageUrl: string;
