@@ -43,6 +43,7 @@ import image6 from "./imgs/image6.png";
 // ================= Icons =================
 import icon1 from "./icons/icon1.png";
 import icon2 from "./icons/icon2.png";
+
 import icon3 from "./icons/icon3.png";
 import icon4 from "./icons/icon4.png";
 import icon5 from "./icons/icon5.png";
@@ -59,9 +60,11 @@ import Register from "./imgs/Register.png";
 
 export const register: string = Register;
 
-export const icons: string[] = [
+export const icons1: string[] = [
   icon1,
   icon2,
+];
+export const icons2: string[] = [
   icon3,
   icon4,
   icon5,

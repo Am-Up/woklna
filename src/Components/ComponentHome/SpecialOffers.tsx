@@ -1,5 +1,4 @@
-import { useState } from "react";
-import { ImgOofers, icons } from "../../assets/index";
+import { ImgOofers, icons1 } from "../../assets/index";
 import HomeFilledIcon from "@mui/icons-material/HomeFilled";
 import AttachMoneyIcon from "@mui/icons-material/AttachMoney";
 import { motion } from "framer-motion";
@@ -16,20 +15,19 @@ interface PropertyOffer {
 }
 
 export default function SpecialOffers() {
-  const [icon1, icon2] = icons;
+  const [icon1, icon2] = icons1;
 
-  const [OffersItem, setOffersItem] = useState<PropertyOffer[]>(
-    ImgOofers.map((img, index) => ({
-      id: index + 1,
-      imageUrl: img,
-      status: 4000 + index * 1000,
-      price: 3800 + index * 1000,
-      description: `Grand Estate #${index + 1}`,
-      location: "103 Wright CourtBurien, WA 98168",
-      bedrooms: 3 + (index % 2),
-      bathrooms: 2,
-    }))
-  );
+const OffersItem: PropertyOffer[] = ImgOofers.map((img, index) => ({
+  id: index + 1,
+  imageUrl: img,
+  status: 4000 + index * 1000,
+  price: 3800 + index * 1000,
+  description: `Grand Estate #${index + 1}`,
+  location: "103 Wright CourtBurien, WA 98168",
+  bedrooms: 3 + (index % 2),
+  bathrooms: 2,
+}));
+
 
   return (
     <motion.div

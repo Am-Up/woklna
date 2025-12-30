@@ -4,10 +4,6 @@ import { motion } from "framer-motion";
 export default function FormSearch() {
   const [tabs, setTabs] = useState("rent");
 
-  const checkTabs = (name:string) => {
-    return tabs === name ? "opacity-100" : "opacity-0";
-  };
-
   return (
     <motion.div
       className="search-form-container bg-white rounded-[40px] shadow-form-lg p-4 sm:p-8 overflow-hidden"

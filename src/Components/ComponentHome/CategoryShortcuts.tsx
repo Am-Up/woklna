@@ -1,10 +1,8 @@
 
-import SearchOutlinedIcon from "@mui/icons-material/SearchOutlined";
-import HomeFilledIcon from "@mui/icons-material/HomeFilled";
-import { icons } from "../../assets";
+import { icons2 } from "../../assets/index";
 import { motion } from "framer-motion";
 export default function CategoryShortcuts() {
-  const [ icon3, icon4, icon5] = icons;
+  const [ icon3,icon4,icon5] = icons2;
   return (
     <div className="w-full bg-text_color5 py-20 mb-10">
       <div className="lg:w-10/12 mx-auto  ">
@@ -46,7 +44,7 @@ export default function CategoryShortcuts() {
           >
             <div className="w-full px-6 py-10 bg-white rounded-3xl ">
               <div className="w-[90px] h-[90px] bg-Color1 rounded-full mx-auto flex justify-center items-center mb-5 text-[50px] text-white">
-                <img src={icon4} alt="img" />
+                <img className="w-10" src={icon4} alt="img" />
               </div>
               <h5 className="text-text_color2 font-poppins text-center">
                 Buy a New Home
@@ -66,7 +64,7 @@ export default function CategoryShortcuts() {
           >
             <div className="w-full px-6 py-10 bg-white rounded-3xl ">
               <div className="w-[90px] h-[90px] bg-Color1 rounded-full mx-auto flex justify-center items-center mb-5 text-white">
-                <img className="w-10" src={icon3} alt="img" />
+                <img className="w-10 " src={icon3} alt="img" />
               </div>
               <h5 className="text-text_color2 font-poppins text-center">
                 Buy a New Home

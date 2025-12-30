@@ -1,4 +1,5 @@
-import { Dispatch, SetStateAction, useEffect } from "react";
+import type { Dispatch, SetStateAction } from "react";
+import { useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import RealEstateAgentSharpIcon from "@mui/icons-material/RealEstateAgentSharp";
 

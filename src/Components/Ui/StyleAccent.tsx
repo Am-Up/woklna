@@ -3,5 +3,5 @@ type StyleAccentProps = {
 };
 
 export default function StelyAccent({ props }: StyleAccentProps) {
-  return <div className={props}></div>;
+  return <div className={`${props} rounded-full`}></div>;
 }
