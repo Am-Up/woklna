@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 export default function FormSearch() {
   const [tabs, setTabs] = useState("rent");
 
-  const checkTabs = (name) => {
+  const checkTabs = (name:string) => {
     return tabs === name ? "opacity-100" : "opacity-0";
   };
 

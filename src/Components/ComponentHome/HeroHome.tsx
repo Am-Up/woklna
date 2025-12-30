@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import HeroGrop from "./HeroGrop";
+import HeroGrop from "./HeroGrop.js";
 import ChevronLeftIcon from "@mui/icons-material/ChevronLeft";
 import ChevronRightIcon from "@mui/icons-material/ChevronRight";
-import StyleAccent from "../Ui/StyleAccent.jsx";
+import StyleAccent from "../Ui/StyleAccent.js";
 import { Heroimgs } from "../../assets/index.js";
 import FormSearch from "./FormSearch";
 import { motion } from "framer-motion";

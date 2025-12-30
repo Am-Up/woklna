@@ -1,4 +1,4 @@
-import React from "react";
+
 import Avatar from "@mui/material/Avatar";
 import AvatarGroup from "@mui/material/AvatarGroup";
 import { Ellipses, img, images } from "../../assets/index";
@@ -30,7 +30,7 @@ export default function HeroGrop() {
                   },
                 }}
               >
-                {Ellipses.map((img, i) => (
+                {Ellipses.map((img:string, i:number) => (
                   <Avatar key={i} alt={`avatar-${i}`} src={img} />
                 ))}
               </AvatarGroup>
@@ -68,7 +68,7 @@ export default function HeroGrop() {
         </p>
 
         <div className="w-full p-5 flex items-center md:justify-center gap-10 overflow-x-auto flex-nowrap scroll-smooth">
-          {images.map((mar, i) => {
+          {images.map((mar:string,i:number) => {
             return (
               <div
                 key={i}

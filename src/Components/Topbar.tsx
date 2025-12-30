@@ -1,4 +1,4 @@
-import React from "react";
+
 import PlaceOutlinedIcon from "@mui/icons-material/PlaceOutlined";
 import PhoneEnabledOutlinedIcon from "@mui/icons-material/PhoneEnabledOutlined";
 import EmailOutlinedIcon from "@mui/icons-material/EmailOutlined";

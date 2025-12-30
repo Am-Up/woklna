@@ -1,4 +1,4 @@
-import React from "react";
+
 import { Ellipses } from "../../assets/index";
 import Rating from "@mui/material/Rating";
 import StelyAccent from "../Ui/StyleAccent";

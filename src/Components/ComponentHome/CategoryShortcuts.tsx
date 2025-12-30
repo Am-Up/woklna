@@ -1,10 +1,10 @@
-import React from "react";
+
 import SearchOutlinedIcon from "@mui/icons-material/SearchOutlined";
 import HomeFilledIcon from "@mui/icons-material/HomeFilled";
 import { icons } from "../../assets";
 import { motion } from "framer-motion";
 export default function CategoryShortcuts() {
-  const [icon1, icon2, icon3, icon4, icon5] = icons;
+  const [ icon3, icon4, icon5] = icons;
   return (
     <div className="w-full bg-text_color5 py-20 mb-10">
       <div className="lg:w-10/12 mx-auto  ">

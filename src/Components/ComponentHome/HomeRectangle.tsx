@@ -1,4 +1,4 @@
-import React from "react";
+
 import { Properties } from "../../assets/index";
 import StyleAccent from "../Ui/StyleAccent";
 import { motion } from "framer-motion";

@@ -1,4 +1,4 @@
-import React from "react";
+
 import HeroHome from "../Components/ComponentHome/HeroHome";
 import CategoryShortcuts from "../Components/ComponentHome/CategoryShortcuts";
 import SpecialOffers from "../Components/ComponentHome/SpecialOffers";
