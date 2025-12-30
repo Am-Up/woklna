@@ -13,7 +13,7 @@ export default function NavBar() {
     <div className="z-20">
       <Topbar />
 
-      <header className="w-full py-3 px-[7%]">
+      <header className="w-full py-3 px-[2%] ">
         {/* Desktop */}
         <div className="hidden lg:grid grid-cols-3 items-center">
           <nav>
@@ -60,7 +60,7 @@ export default function NavBar() {
         </div>
 
         {/* Mobile */}
-        <div className="flex lg:hidden justify-between items-center">
+        <div className=" flex lg:hidden justify-between items-center ">
           <motion.div
             animate={{
               y: loading ? 700 : 0,
@@ -75,7 +75,9 @@ export default function NavBar() {
             <h3 className="font-semibold font-poppins text-2xl">Waklna</h3>
           </motion.div>
 
-          <MenuIcon fontSize="large" />
+         <div className="pr-3">
+           <MenuIcon fontSize="large" />
+         </div>
         </div>
 
         <Lodaing_Logo loading={loading} setLoading={setLoading} />
