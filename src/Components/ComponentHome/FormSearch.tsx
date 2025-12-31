@@ -119,7 +119,7 @@ export default function FormSearch() {
 
         <button
           type="submit"
-          className="search-submit-btn font-poppins w-full p-2  sm:p-4 bg-[#4f0393] text-white rounded-[30px] text-md font-bold cursor-pointer shadow-lg shadow-purple-500/50 transition duration-200 hover:bg-[#9d50ed] hover:scale-[1.01] mt-8"
+          className="search-submit-btn font-poppins w-full px-2 py-4  sm:p-4 bg-[#4f0393] text-white rounded-[30px] text-md font-bold cursor-pointer shadow-lg shadow-purple-500/50 transition duration-200 hover:bg-[#9d50ed] hover:scale-[1.01] mt-8"
         >
           Search <i className="fas fa-search"></i>
         </button>

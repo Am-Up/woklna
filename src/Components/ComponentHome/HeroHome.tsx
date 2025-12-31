@@ -57,7 +57,7 @@ export default function HeroHome() {
               {/* LEFT BTN */}
               <button
                  onClick={nxtSlide}
-                className="bg-white/30 hover:bg-Color1/50 text-white rounded-full absolute left-4 sm:-left-3 shadow-xl z-40 p-1 "
+                className="bg-white/30 md:hover:bg-Color1/50 text-white rounded-full absolute left-4 sm:-left-3 shadow-xl z-40 p-1 "
               >
                 <ChevronLeftIcon className="w-6 h-6 sm:w-8 sm:h-8 md:w-10 md:h-10" />
               </button>
@@ -81,7 +81,7 @@ export default function HeroHome() {
               {/* RIGHT BTN */}
               <button
                 onClick={prevSlide}
-                className="bg-white/30 hover:bg-Color1/50 text-white rounded-full absolute right-4 sm:-right-3 shadow-xl z-30 p-1 "
+                className="bg-white/30 md:hover:bg-Color1/50 text-white rounded-full absolute right-4 sm:-right-3 shadow-xl z-30 p-1 "
               >
                 <ChevronRightIcon/>
               </button>

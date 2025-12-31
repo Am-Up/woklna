@@ -17,17 +17,16 @@ interface PropertyOffer {
 export default function SpecialOffers() {
   const [icon1, icon2] = icons1;
 
-const OffersItem: PropertyOffer[] = ImgOofers.map((img, index) => ({
-  id: index + 1,
-  imageUrl: img,
-  status: 4000 + index * 1000,
-  price: 3800 + index * 1000,
-  description: `Grand Estate #${index + 1}`,
-  location: "103 Wright CourtBurien, WA 98168",
-  bedrooms: 3 + (index % 2),
-  bathrooms: 2,
-}));
-
+  const OffersItem: PropertyOffer[] = ImgOofers.map((img, index) => ({
+    id: index + 1,
+    imageUrl: img,
+    status: 4000 + index * 1000,
+    price: 3800 + index * 1000,
+    description: `Grand Estate #${index + 1}`,
+    location: "103 Wright CourtBurien, WA 98168",
+    bedrooms: 3 + (index % 2),
+    bathrooms: 2,
+  }));
 
   return (
     <motion.div
@@ -64,7 +63,19 @@ const OffersItem: PropertyOffer[] = ImgOofers.map((img, index) => ({
       </section>
 
       {/* Offers Section */}
-      <section className="sm:mx-[4%] mb-10 w-full flex overflow-x-auto gap-6 flex-nowrap scroll-smooth">
+      <section
+        className="  hide-scrollbar
+    sm:mx-[4%]
+    mb-10
+    w-full
+    flex
+    overflow-x-auto
+    gap-6
+    flex-nowrap
+    scroll-smooth
+    snap-x
+    snap-mandatory"
+      >
         {OffersItem.map((offer) => (
           <motion.div
             initial={{ opacity: 0, x: 40 }}
@@ -72,7 +83,15 @@ const OffersItem: PropertyOffer[] = ImgOofers.map((img, index) => ({
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.7 }}
             key={offer.id}
-            className="flex-shrink-0 w-full pl-4 sm:pl-0 pr-1 max-w-[340px] mx-auto"
+            className="
+    flex-shrink-0
+    w-full
+    px-2
+    sm:pl-0
+    max-w-[340px]
+    mx-auto
+    snap-center
+  "
           >
             <div className="relative">
               <div className="h-[220px] relative rounded-lg overflow-hidden">

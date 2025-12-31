@@ -67,7 +67,7 @@ export default function HeroGrop() {
           Trusted by 100+ Companies across the globe!
         </p>
 
-        <div className="w-full p-5 flex items-center md:justify-center gap-10 overflow-x-auto flex-nowrap scroll-smooth">
+        <div className="hide-scrollbar w-full p-5 flex items-center md:justify-center gap-10 overflow-x-auto flex-nowrap scroll-smooth">
           {images.map((mar:string,i:number) => {
             return (
               <div
