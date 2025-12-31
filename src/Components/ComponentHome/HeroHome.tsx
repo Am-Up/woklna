@@ -1,9 +1,9 @@
 import { useState } from "react";
-import HeroGrop from "./HeroGrop.js";
+import HeroGrop from "./HeroGrop";
 import ChevronLeftIcon from "@mui/icons-material/ChevronLeft";
 import ChevronRightIcon from "@mui/icons-material/ChevronRight";
-import StyleAccent from "../Ui/StyleAccent.js";
-import { Heroimgs } from "../../assets/index.js";
+import StyleAccent from "../Ui/StyleAccent";
+import { Heroimgs } from "../../assets/index";
 import FormSearch from "./FormSearch";
 import { motion } from "framer-motion";
 
@@ -56,8 +56,8 @@ export default function HeroHome() {
             <div className="w-full flex items-center relative max-w-[580px] max-h-[351px] ">
               {/* LEFT BTN */}
               <button
-                onClick={nxtSlide}
-                className="bg-white hover:bg-Color1/30 text-text_color4 rounded-full absolute left-10 sm:-left-3 shadow-xl z-30 p-0 sm:p-1"
+                 onClick={nxtSlide}
+                className="bg-white/30 hover:bg-Color1/50 text-text_color4 rounded-full absolute left-4 sm:-left-3 shadow-xl z-40 p-1 "
               >
                 <ChevronLeftIcon className="w-6 h-6 sm:w-8 sm:h-8 md:w-10 md:h-10" />
               </button>
@@ -81,9 +81,9 @@ export default function HeroHome() {
               {/* RIGHT BTN */}
               <button
                 onClick={prevSlide}
-                className="bg-white/80 hover:bg-Color1/30 text-text_color4 rounded-full absolute right-10 sm:-right-3 shadow-xl z-30 p-0 sm:p-1"
+                className="bg-white/30 hover:bg-Color1/50 text-text_color4 rounded-full absolute right-4 sm:-right-3 shadow-xl z-30 p-1 "
               >
-                <ChevronRightIcon />
+                <ChevronRightIcon/>
               </button>
             </div>
           </div>
