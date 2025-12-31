@@ -74,7 +74,8 @@ export default function SpecialOffers() {
     flex-nowrap
     scroll-smooth
     snap-x
-    snap-mandatory"
+    snap-mandatory
+     px-[calc(50%-170px)]"
       >
         {OffersItem.map((offer) => (
           <motion.div
@@ -86,7 +87,7 @@ export default function SpecialOffers() {
             className="
     flex-shrink-0
     w-full
-    px-2
+
     sm:pl-0
     max-w-[340px]
     mx-auto
