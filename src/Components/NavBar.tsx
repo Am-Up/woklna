@@ -13,7 +13,7 @@ export default function NavBar() {
     <div className="z-20">
       <Topbar />
 
-      <header className="w-full py-3 px-[2%] ">
+      <header className="w-full py-3 px-[7%] ">
         {/* Desktop */}
         <div className="hidden lg:grid grid-cols-3 items-center">
           <nav>

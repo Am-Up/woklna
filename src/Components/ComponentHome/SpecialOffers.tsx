@@ -75,7 +75,10 @@ export default function SpecialOffers() {
     scroll-smooth
     snap-x
     snap-mandatory
-     px-[calc(50%-170px)]"
+     px-[calc(50%-170px)]
+    
+     xsl:px-4
+    "
       >
         {OffersItem.map((offer) => (
           <motion.div
@@ -87,14 +90,14 @@ export default function SpecialOffers() {
             className="
     flex-shrink-0
     w-full
-
     sm:pl-0
     max-w-[340px]
     mx-auto
     snap-center
+    px-2
   "
           >
-            <div className="relative">
+            <div className="relative ">
               <div className="h-[220px] relative rounded-lg overflow-hidden">
                 <img
                   loading="lazy"

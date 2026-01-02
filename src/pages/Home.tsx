@@ -7,15 +7,16 @@ import Footer from "../Components/Footer";
 import HomeRectangle from "../Components/ComponentHome/HomeRectangle";
 import LatestBlogs from "../Components/ComponentHome/LatestBlogs";
 import AgentTestimonials from "../Components/ComponentHome/AgentTestimonials";
+import ScrollToTopButton from "../Components/Ui/ScrollToTopButton";
 
 export default function Home() {
   return (
     <div className="relative w-full min-h-screen overflow-hidden">
       <HeroHome />
-
+      <ScrollToTopButton/>
       <StyleAccent
         props="
-          w-[110%] h-[1800px] md:h-[1550px] lg:h-[1680px] absolute left-1/2 
+          w-[110%] h-[1800px] md:h-[1550px] lg:h-[1660px] absolute left-1/2 
           -top-[150px] -translate-x-1/2 
           -translate-y-1/2 -z-10 
           bg-[linear-gradient(to_bottom,white_60%,rgb(67_97_238/0.5))]

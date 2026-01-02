@@ -21,15 +21,15 @@ export default function HeroHome() {
   };
 
   return (
-    <div>
-      <div className="w-full flex flex-col md:flex-row items-center justify-between gap-12 mt-10 px-4 sm:px-[6%]">
+    <div className="flex flex-col">
+      <div className="w-full flex flex-col md:flex-row items-center justify-between gap-2 mt-8 px-4 sm:px-[6%]">
         {/* ================= LEFT (Text + Slider) ================= */}
         <motion.section
           initial={{ opacity: 0, x: -160 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.7 }}
           className="w-full h-full flex flex-col justify-center md:ml-10"
-        >
+        > 
           {/* TEXT */}
           <motion.div
             initial={{ opacity: 0, y: -60 }}
@@ -66,7 +66,7 @@ export default function HeroHome() {
               <div className="w-full h-full relative">
                 <div className="rounded-3xl shadow-2xl overflow-hidden relative">
                   <img
-                    className="shadow-2xl w-full h-[230px] sm:h-96  max-w-[580px] max-h-[431px] relative z-20"
+                    className="shadow-2xl w-full h-[230px] sm:h-96  max-w-[580px] max-h-[370px] relative z-20"
                     src={imgs[currentIndex]}
                     alt={`slide-${currentIndex}`}
                     loading="lazy"
@@ -90,7 +90,7 @@ export default function HeroHome() {
         </motion.section>
 
         {/* ================= RIGHT (Form) ================= */}
-        <section className="w-full flex justify-center">
+        <section className="w-full flex justify-center mt-2 items-end ">
           <motion.div
             initial={{ opacity: 0, x: 160 }}
             animate={{ opacity: 1, x: 0 }}

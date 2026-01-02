@@ -65,9 +65,11 @@ export default function LatestBlogs() {
             className="
               bg-transparent
               text-white
-              rounded-3xl
+              rounded-tl-3xl
+              rounded-tr-3xl
               overflow-hidden
               group
+              
             "
           >
             {/* Image */}

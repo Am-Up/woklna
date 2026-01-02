@@ -92,7 +92,7 @@ export default function HomeRectangle() {
             <img
               src={img5}
               alt="San Francisco"
-              className="w-full h-full object-cover"
+              className="w-full h-full object-cover z-40"
             />
             <div className="absolute inset-0 bg-black/40" />
             <div className="absolute bottom-2 left-2 z-10 text-white">
@@ -104,8 +104,8 @@ export default function HomeRectangle() {
           </motion.div>
         </div>
 
-        <StyleAccent props="bg-gradient-to-bl from-Color1/60 w-16 h-16 absolute bottom-40 left-20 -z-20" />
-        <StyleAccent props="bg-gradient-to-bl from-Color1/60 w-12 h-12 sm:w-28 sm:h-28 absolute bottom-16 sm:right-64 right-60 -z-20" />
+        <StyleAccent props="bg-gradient-to-bl from-Color1/60 w-16 h-16 absolute bottom-40 left-20 z-10" />
+        <StyleAccent props="bg-gradient-to-bl from-Color1/60 w-12 h-12 sm:w-28 sm:h-28 absolute bottom-16 sm:right-64 right-64 z-0" />
       </section>
     </div>
   );
